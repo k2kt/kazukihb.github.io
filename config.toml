@@ -1,43 +1,28 @@
 # 公開するページのURL
 baseURL = "https://kazukihb.github.io"
+title = "SiteTitle"
+theme = "hugo_theme_robust"
 
-languageCode = "ja"
-DefaultContentLanguage = "ja"
-HasCJKLanguage = true
-enableRobotsTXT = true
+googleAnalytics = "UA-XXXXXXXX-XX" # Optional
+disqusShortname = "XYW"
 
-# ブログのタイトル
-title = "hugo-blog-template"
+[params]
+description = "This is site description"
+dateformat = "Jan 2, 2006" # Optional
+# Fonts settings.
+googlefonts = "https://fonts.googleapis.com/css?family=Lobster|Lato:400,700" # Optional, Include google fonts.
+fontfamily = "Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif" # Optional, Override body font family.
+logofontfamily = "Lobster, cursive" # Optional, Override logo font.
 
-theme = "mainroad"
-paginate = 20
+enableHighlight = true # highlight.js option
 
-# 自己紹介
-[Author]
-    name = "Author"
-    bio = "ここに自己紹介を入れることができます"
-    avatar = "img/avatar.png"
+[params.author]
+thumbnail = "images/author.jpg"
+name = "John Doe"
+description = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p><p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+facebook = "https://www.facebook.com/daisuke.tsuji.735"
+twitter = "https://twitter.com/dim0627"
+github = "https://github.com/dim0627"
 
-[Params]
-    customCSS = ["css/custom.css"]
-    copyright = "Author"
-    readmore = true
-    authorbox = true
-    post_meta = ["date", "categories"]
-    twitter_cards = true
-
-# ページのテーマカラー
-[Params.style.vars]
-  highlightColor = "#e22d30"
-
-# SNS等のユーザー名
-[Params.widgets.social]
-  twitter = "uvrub"
-  github = "kato-k"
-
-[Params.sidebar]
-    home = "right"
-    list = "right"
-    single = "right"
-    widgets = ["search", "recent", "categories", "taglist", "social"]
-
+[outputs]
+page = [ "HTML", "AMP" ] # if you want AMP enable.
